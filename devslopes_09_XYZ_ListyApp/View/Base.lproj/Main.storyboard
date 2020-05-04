@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a4a-MA-Vrc">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devslopes_09_XYZ_ListyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PBR-3o-vit">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CB2-bS-9vk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333334"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="50"/>
+                                        <color key="textColor" red="0.97957998509999999" green="0.97974020240000004" blue="0.97954601050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0G-rq-g95">
+                                        <rect key="frame" x="0.0" y="245.33333333333331" width="414" height="245.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="50"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqo-ch-YwH">
+                                        <rect key="frame" x="0.0" y="490.66666666666669" width="414" height="245.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="50"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PBR-3o-vit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MCq-au-RWA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PBR-3o-vit" secondAttribute="bottom" id="Rvt-cb-lWu"/>
+                            <constraint firstItem="PBR-3o-vit" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sJc-hD-Wjt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PBR-3o-vit" secondAttribute="trailing" id="wZZ-aH-Cbx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="xLbl" destination="CB2-bS-9vk" id="3WC-a3-R2h"/>
+                        <outlet property="yLbl" destination="H0G-rq-g95" id="Aee-rx-DlW"/>
+                        <outlet property="zLbl" destination="Hqo-ch-YwH" id="4Ve-Kv-7vK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="9"/>
+        </scene>
+        <!--List Table View Controller-->
+        <scene sceneID="ha0-n4-VYv">
+            <objects>
+                <tableViewController id="a4a-MA-Vrc" customClass="ListTableViewController" customModule="devslopes_09_XYZ_ListyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="APd-Ct-oEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="parallaxCell" rowHeight="120" id="AFX-Lf-6xi" customClass="ParallaxCell" customModule="devslopes_09_XYZ_ListyApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AFX-Lf-6xi" id="RxQ-Ua-cpr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Og6-ba-qGl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsf-fE-k98">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.40140732020547948" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="70"/>
+                                            <color key="textColor" red="0.97957998509999999" green="0.97974020240000004" blue="0.97954601050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Og6-ba-qGl" firstAttribute="top" secondItem="RxQ-Ua-cpr" secondAttribute="top" id="KR9-B8-3cR"/>
+                                        <constraint firstItem="Zsf-fE-k98" firstAttribute="leading" secondItem="RxQ-Ua-cpr" secondAttribute="leading" id="OB9-n9-V7A"/>
+                                        <constraint firstItem="Og6-ba-qGl" firstAttribute="leading" secondItem="RxQ-Ua-cpr" secondAttribute="leading" id="PDD-V2-hhe"/>
+                                        <constraint firstAttribute="bottom" secondItem="Og6-ba-qGl" secondAttribute="bottom" id="dy7-Qy-2PO"/>
+                                        <constraint firstAttribute="bottom" secondItem="Zsf-fE-k98" secondAttribute="bottom" id="esg-L7-tzA"/>
+                                        <constraint firstAttribute="trailing" secondItem="Og6-ba-qGl" secondAttribute="trailing" id="knS-JL-SCA"/>
+                                        <constraint firstItem="Zsf-fE-k98" firstAttribute="top" secondItem="RxQ-Ua-cpr" secondAttribute="top" id="qHm-W0-hQH"/>
+                                        <constraint firstAttribute="trailing" secondItem="Zsf-fE-k98" secondAttribute="trailing" id="zR3-Xy-V2h"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bgImageView" destination="Og6-ba-qGl" id="1WA-lw-Z53"/>
+                                    <outlet property="rowLbl" destination="Zsf-fE-k98" id="l7x-Gd-S21"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a4a-MA-Vrc" id="Cs5-wD-Kk7"/>
+                            <outlet property="delegate" destination="a4a-MA-Vrc" id="K43-GD-3Kn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVm-yV-8me" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.62318840579712" y="26.90217391304348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1080" height="720"/>
+    </resources>
+</document>
